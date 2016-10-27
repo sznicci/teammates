@@ -41,7 +41,9 @@
             <c:if test="${not empty data.account && not empty data.account.googleId}">
                 <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a id="btnLogout" class="nav logout" href="<%= Const.ActionURIs.LOGOUT %>">Logout
+                        <a id="btnLogout" class="nav logout" href="<%= Const.ActionURIs.LOGOUT %>">
+                            <span class="glyphicon glyphicon-user" style="color:#38d770;"></span> Logout
+                            
                             (<span class="text-info" data-toggle="tooltip" title="${data.account.googleId}" data-placement="bottom">
                                 ${data.account.truncatedGoogleId}
                             </span>)
